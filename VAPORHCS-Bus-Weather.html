@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<style>
 			body {overflow: hidden;}
 			#content {position: static;}
 			#bus {float: left; overflow: hidden; height: 100%; width: 62%; position: absolute; left: 0; border: none; }
-			#weather {float: right; overflow: hidden; height: 68%; width: 38%; position: absolute; right: 0; border: none; }
+			#weather {float: right; overflow: hidden; height: 70%; width: 38%; position: absolute; right: 0; border: none; }
 			#DTG {position: absolute; bottom: 6%; right: 0; width: 38%; height: 25%; }
 			#today {font-size: 2.5em; font-weight: bold; text-align: center; padding: 20px 0px; background-color: #1133c5; text-shadow: 2px 2px beige; }
-			#time {font-size: 3.5em; font-weight: bold; text-align: center; padding-top: 30px; background-color: #1133f2; padding-bottom: 100px; text-shadow: 2px 2px beige; }
+			#time {font-size: 3.5em; font-weight: bold; text-align: center; padding-top: 30px; background-color: #1133f2; padding-bottom: 250px; text-shadow: 2px 2px beige; }
 		</style>
 		<script language="javascript" type="text/javascript">
 	  	function time () {
 	  		setTimeout("time()", 1000)
 	  		var tm = new Date();
-	  		document.getElementById("time").innerHTML = tm.toLocaleString();
+	  		return document.getElementById("time").innerHTML = tm.toLocaleString();
  			};
- 			setTimeout("location.reload(true);",60000);
+ 			setTimeout("location.reload(true);",3600000);
     </script>
 	</head>
 	<body onload="time()">

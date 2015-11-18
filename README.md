@@ -8,5 +8,9 @@ Version 1.0:
   CSS and JS included in HTML per use case requirements for deployment.
 
 Version 1.01:
-	Weather Link iframe height reduction from 70% to 68%.
 	Added page refresh every 60,000 miliseconds (hourly).
+
+Version 1.02:
+	Corrected:
+		-Function not closed properly;
+		-hourly refresh now set at proper milisecond interval (3,600,000 ms).
